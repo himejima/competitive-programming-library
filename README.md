@@ -1,8 +1,8 @@
 # toyon-competitive-programming-library
 
-問題で使ったアルゴリズム、データ構造、考え方を出来るだけ分類していきます。
+問題を解くときに使用したアルゴリズム、データ構造、考え方を出来るだけ分類していきます。
 
-## 探索 
+## 探索
 
 - [ビット全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/bit.cpp)
 - [順列全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/permutation.cpp)
@@ -66,6 +66,21 @@
 - [最小全域木(Kruskal)](https://github.com/himejima/competitive-programming-library/blob/master/graph/kruskal.cpp)
 
 ## 数学
+
+### 数論
+
+- [素数判定]
+- [約数列挙]
+- [素因数分解]
+- [エラトステネスの篩](https://github.com/himejima/competitive-programming-library/blob/master/math/sieve-eratosthenes.cpp)
+- [modpow](https://github.com/himejima/competitive-programming-library/blob/master/math/modpow.cpp)
+
+### 組合せ
+
+- [modint]
+- [組合せ]
+
+### 行列
 
 - [行列累乗](https://github.com/himejima/competitive-programming-library/blob/master/math/matrix.cpp)
 
