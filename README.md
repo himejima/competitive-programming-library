@@ -30,7 +30,7 @@
 
 ### 最短路
 
-- [単一始点最短路 O(|E|log|V|) ※ 正辺のみ](https://github.com/himejima/competitive-programming-library/blob/master/graph/dijkstra.cpp)
+- [単一始点最短路 (Dijkstra) O(|E|log|V|) ※ 正辺のみ](https://github.com/himejima/competitive-programming-library/blob/master/graph/dijkstra.cpp)
 
 ### 最小全域木
 
