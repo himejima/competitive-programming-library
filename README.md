@@ -42,7 +42,7 @@
 
 ## 幾何
 
-問題解いたら追加
+- [基本処理詰め合わせ](https://github.com/himejima/competitive-programming-library/blob/master/geometry/template.cpp)
 
 ## グラフ
 
