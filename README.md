@@ -78,8 +78,8 @@
 
 ### 組合せ
 
-- [modint]
-- [組合せ]
+- [modint](https://github.com/himejima/competitive-programming-library/blob/master/math/modint-combination.cpp)
+- [組合せ](https://github.com/himejima/competitive-programming-library/blob/master/math/modint-combination.cpp)
 
 ### 行列
 
