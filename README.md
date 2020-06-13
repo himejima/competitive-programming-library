@@ -24,7 +24,7 @@
 
 ## 文字列
 
-問題解いたら追加
+- [ローリングハッシュ](https://github.com/himejima/competitive-programming-library/blob/master/string/rolling_hash.cpp)
 
 ## 幾何
 
