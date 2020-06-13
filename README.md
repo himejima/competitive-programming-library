@@ -1,5 +1,12 @@
 # toyon-competitive-programming-library
 
+問題で使ったアルゴリズム、データ構造、考え方を出来るだけ分類していきます。
+
+## 全列挙
+
+- [ビット全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/bit.cpp)
+- [順列全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/permutation.cpp)
+
 ## データ構造
 
 ### Union-Find
