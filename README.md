@@ -50,3 +50,5 @@
 ### 行列
 
 ## その他
+
+- [ダブリング](https://github.com/himejima/competitive-programming-library/blob/master/other/doubling.cpp)
