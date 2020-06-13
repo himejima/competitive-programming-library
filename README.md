@@ -46,6 +46,10 @@
 
 - [最小全域木(Kruskal)](https://github.com/himejima/competitive-programming-library/blob/master/graph/kruskal.cpp)
 
+## 数学
+
+- [行列累乗](https://github.com/himejima/competitive-programming-library/blob/master/math/matrix.cpp)
+
 ## その他
 
 - [ダブリング](https://github.com/himejima/competitive-programming-library/blob/master/other/doubling.cpp)
