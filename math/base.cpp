@@ -1,10 +1,11 @@
 // 未検証です。
-//
-// 最大公約数
-// 最小公倍数
-// 素数判定
-// 約数列挙
-//
+// 検証後、分解していく予定
+// 
+// - 最大公約数
+// - 最小公倍数
+// - 素数判定
+// - 約数列挙
+// - 素因数分解
 #include <bits/stdc++.h>
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 #define sz(x) int(x.size())
@@ -40,6 +41,19 @@ vector<ll> calc_divisor(ll n) {
         }
     }
     sort(res.begin(), res.end());
+    return res;
+}
+
+// 素因数分解
+vector<pair<ll, ll>> prime_factorize(ll n) {
+    vector<pair<ll, ll>> res;
+    for (ll p = 2; p * p <= n; ++p) {
+        if (n % p != 0) continue;
+        int num = 0;
+        while (n % p == 0) { ++num; n /= p; }
+        res.push_back(make_pair(p, num));
+    }
+    if (n != 1) res.push_back(make_pair(n, 1));
     return res;
 }
 

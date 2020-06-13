@@ -69,9 +69,10 @@
 
 ### 数論
 
-- [素数判定]
-- [約数列挙]
-- [素因数分解]
+- [GCD, LCM](https://github.com/himejima/competitive-programming-library/blob/master/math/base.cpp)
+- [素数判定](https://github.com/himejima/competitive-programming-library/blob/master/math/base.cpp)
+- [約数列挙](https://github.com/himejima/competitive-programming-library/blob/master/math/base.cpp)
+- [素因数分解](https://github.com/himejima/competitive-programming-library/blob/master/math/base.cpp)
 - [エラトステネスの篩](https://github.com/himejima/competitive-programming-library/blob/master/math/sieve-eratosthenes.cpp)
 - [modpow](https://github.com/himejima/competitive-programming-library/blob/master/math/modpow.cpp)
 
