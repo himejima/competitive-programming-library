@@ -42,7 +42,7 @@
 
 ### DFS・BFS
 
-- [探索(DFS)](https://github.com/himejima/competitive-programming-library/blob/master/graph/dfs.cpp)
+- [DFS (探索)](https://github.com/himejima/competitive-programming-library/blob/master/graph/dfs.cpp)
 - [BFS (重みなしグラフの最短路)](https://github.com/himejima/competitive-programming-library/blob/master/graph/bfs.cpp)
 
 ### フロー
