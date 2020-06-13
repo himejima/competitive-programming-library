@@ -11,7 +11,7 @@
 
 ### DP パターン例
 
-- ナップサック DP
+- [0-1ナップサック DP](https://github.com/himejima/competitive-programming-library/blob/master/dp/knapsack-01.cpp)
 - 区間分割型ナップサック DP
 - bitDP
 - 桁 DP
