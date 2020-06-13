@@ -4,7 +4,7 @@
 // 計算量: O(|E|log|V|) 
 // 
 // verified
-// [GRL_2_A < Problems | Aizu Online Judge](https://onlinejudge.u-aizu.ac.jp/problems/GRL_2_A)
+// [D - Built?](https://atcoder.jp/contests/abc065/tasks/arc076_b)
 #include <bits/stdc++.h>
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 #define sz(x) int(x.size())
@@ -13,7 +13,7 @@ typedef long long ll;
 typedef pair<int, int> P;
 
 const ll INF = 1LL << 60;
-struct edge { int cost, u, v; };
+struct edge { ll cost, u, v; };
 
 bool comp(const edge& e1, const edge& e2) {
     return e1.cost < e2.cost;
@@ -59,24 +59,48 @@ public:
   }
 };
 
+ll N;
 int main() {
-    ll V, E;
-    cin >> V >> E;
+    cin >> N;
 
-    edge es[100100];
-    rep(i, E) {
-        int x, t, w;
-        cin >> x >> t >> w;
-        edge e { w, x, t };
-        es[i] = e;
+    vector<edge> es;
+
+    vector<P> a;
+    vector<P> b;
+
+    // 辺の数
+    rep(i, N) {
+        int x, y;
+        cin >> x >> y;
+        a.push_back(P(x, i));
+        b.push_back(P(y, i));
+    }
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    for (int i = 1; i <= N - 1; i++) {
+        P prev = a[i - 1];
+        P current = a[i];
+
+        ll w = abs(prev.first - current.first);
+        edge e { w, prev.second, current.second };
+        es.push_back(e);
     }
 
-    sort(es, es + E, comp);
-    UnionFind uf = UnionFind(V);
+    for (int i = 1; i <= N - 1; i++) {
+        P prev = b[i - 1];
+        P current = b[i];
+
+        ll w = abs(prev.first - current.first);
+        edge e { w, prev.second, current.second };
+        es.push_back(e);
+    }
+
+    sort(es.begin(), es.end(), comp);
+    UnionFind uf = UnionFind(N);
 
     ll cost = 0;
-    rep(i, E) {
-        // cout << es[i].cost << " " << es[i].u << " " << es[i].v << endl;
+    rep(i, es.size()) {
         if (uf.root(es[i].u) != uf.root(es[i].v)) {
             uf.connect(es[i].u, es[i].v);
             cost += es[i].cost;
