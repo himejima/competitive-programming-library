@@ -11,27 +11,22 @@
 
 ### Trie
 
----
 
 ## DP
 
----
 
 ## 文字列
 
 
----
-
 ## 幾何
 
----
 
 ## グラフ
 
 ### フロー
 
 - [最大流(Dinic) O(EV^2)](https://github.com/himejima/competitive-programming-library/blob/master/graph/dinic.cpp)
-- [最小カット=最大流]
+- 最小カット=最大流
 
 ### 最短路
 
@@ -41,7 +36,6 @@
 
 ### その他
 
----
 
 ## 数学
 
@@ -52,7 +46,5 @@
 ### FFT
 
 ### 行列
-
----
 
 ## その他
