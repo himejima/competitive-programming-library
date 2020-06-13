@@ -21,6 +21,7 @@
 
 - [一次元累積和](https://github.com/himejima/competitive-programming-library/blob/master/dp/cumulative-sum.cpp)
 - [二次元累積和](https://github.com/himejima/competitive-programming-library/blob/master/dp/cumulative-sum-2d.cpp)
+- [いもす法](https://github.com/himejima/competitive-programming-library/blob/master/dp/imos.cpp)
 
 ### DP パターン例
 
