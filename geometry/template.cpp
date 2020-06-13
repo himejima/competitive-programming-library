@@ -1,6 +1,9 @@
 //
 // 幾何の基本処理詰め合わせ 
-//
+// 
+// 参考
+// アルゴリズムとデータ構造
+// 
 // verified
 // [B - アリの高橋くん](https://atcoder.jp/contests/arc042/tasks/arc042_b)
 //
@@ -17,6 +20,7 @@ const int INF = 1e8;
 // const ll INF = 1LL << 60;
 typedef pair<int, int> P;
 
+// 点
 class Point {
     public:
     double x, y;
@@ -38,6 +42,7 @@ class Point {
     }
 };
 
+// 線分
 struct Segment {
     Point p1, p2;
 };
@@ -45,10 +50,12 @@ struct Segment {
 typedef Point Vector;
 typedef Segment Line;
 
+// 内積
 double dot(Vector a, Vector b) {
     return a.x * b.x + a.y * b.y;
 }
 
+// 外積 
 double cross(Vector a, Vector b) {
     return a.x * b.y - a.y * b.x;
 }
@@ -57,10 +64,12 @@ double norm(Vector a) {
     return a.x * a.x + a.y * a.y;
 }
 
+// ベクトルの大きさ
 double abs(Vector a) {
     return sqrt(norm(a));
 }
- 
+
+// ベクトル通しの位置関係を調べる 
 static const int COUNTER_CLOCK_WISE = 1;
 static const int CLOCK_WISE = -1;
 static const int ONLINE_BACK = 2;
@@ -78,6 +87,7 @@ int ccw(Point p0, Point p1, Point p2) {
     return ON_SEGMENT;
 }
 
+// 交差判定
 bool intersect(Point p1, Point p2, Point p3, Point p4) {
     return (ccw(p1, p2, p3) * ccw(p1, p2, p4) <= 0 &&
         ccw(p3, p4, p1) * ccw(p3, p4, p2) <= 0);
@@ -86,23 +96,25 @@ bool intersect(Segment s1, Segment s2) {
     return intersect(s1.p1, s1.p2, s2.p1, s2.p2);
 }
 
+// 直線lと点pの距離
 double getDistanceLP(Line l, Point p) {
     return abs(cross(l.p2 - l.p1, p - l.p1) / abs(l.p2 - l.p1));
 }
 
+// 線分sと点pの距離
 double getDistanceSP(Segment s, Point p) {
     if (dot(s.p2 - s.p1, p - s.p1) < 0.0) return abs(p - s.p1);
     if (dot(s.p1 - s.p2, p - s.p2) < 0.0) return abs(p - s.p2);
     return getDistanceLP(s, p);
 }
 
+// 線分s1と線分s2の距離
 double getDistance(Segment s1, Segment s2) {
     if (intersect(s1, s2)) return 0.0;
     return min(min(getDistanceSP(s1, s2.p1), getDistanceSP(s1, s2.p2)),
         min(getDistanceSP(s2, s1.p1), getDistanceSP(s2, s1.p2)));
 }
  
-
 int main() {
     ll x, y, N;
     cin >> x >> y >> N;
