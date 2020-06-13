@@ -44,7 +44,7 @@
 
 ### 最小全域木
 
-問題解いたら追加
+- [最小全域木(Kruskal)](https://github.com/himejima/competitive-programming-library/blob/master/graph/kruskal.cpp)
 
 ## その他
 
