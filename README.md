@@ -49,6 +49,7 @@
 ### DFS・BFS
 
 - [DFS (探索)](https://github.com/himejima/competitive-programming-library/blob/master/graph/dfs.cpp)
+- [DFS 連結成分の数を求める](https://github.com/himejima/competitive-programming-library/blob/master/graph/dfs2.cpp)
 - [BFS (重みなしグラフの最短路)](https://github.com/himejima/competitive-programming-library/blob/master/graph/bfs.cpp)
 
 ### フロー
