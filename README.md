@@ -57,6 +57,7 @@
 - [最大流(Dinic) O(EV^2)](https://github.com/himejima/competitive-programming-library/blob/master/graph/dinic.cpp)
 - 最小カット=最大流
 - 二部マッチング=最大流 (※別解あり)
+- 最小費用流
 
 ### 最短路
 
