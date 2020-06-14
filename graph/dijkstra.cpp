@@ -5,6 +5,21 @@
 //
 // verified
 // [D - .. (Double Dots)](https://atcoder.jp/contests/abc168/tasks/abc168_d)
+// 
+
+/*
+使い方の例
+
+// 距離の初期化
+rep(i, N) dist[i] = INF;
+
+// グラフの構築
+rep(i, M) {
+    ll a, b;
+    cin >> a >> b;
+    a--; b--;
+    g[a].push_back((edge){1, b});
+*/
 
 #include <bits/stdc++.h>
 #define rep(i, n) for (int i = 0; i < (n); ++i)
@@ -18,10 +33,10 @@ const ll INF = 1LL << 60;
 const string YES = "Yes";
 
 struct edge { ll cost, to; };
-vector<edge> g[200100];
-ll dist[100100];
-vector<ll> prever;
-ll N;
+vector<edge> g[200100]; // 辺
+ll dist[100100]; // 距離
+vector<ll> prever; // どこから来たか
+ll N; // 頂点の数
 
 void dijkstra(ll s) {
     dist[s] = 0;
