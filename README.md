@@ -32,7 +32,7 @@
 - 部分列 DP
 - ダブリング DP
 - 木 DP
-- 全方位木 DP (俗称)
+- [全方位木 DP (俗称)](https://github.com/himejima/competitive-programming-library/blob/master/dp/reroot-dp.cpp)
 - 二乗の木 DP (俗称)
 
 
