@@ -95,3 +95,4 @@
 ## その他
 
 - [ダブリング](https://github.com/himejima/competitive-programming-library/blob/master/other/doubling.cpp)
+- [しゃくとり法](https://github.com/himejima/competitive-programming-library/blob/master/other/two-pointers.cpp)
