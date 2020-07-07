@@ -79,6 +79,7 @@
 - [素因数分解](https://github.com/himejima/competitive-programming-library/blob/master/math/base.cpp)
 - [エラトステネスの篩](https://github.com/himejima/competitive-programming-library/blob/master/math/sieve-eratosthenes.cpp)
 - [modpow](https://github.com/himejima/competitive-programming-library/blob/master/math/modpow.cpp)
+- [xor](https://github.com/himejima/competitive-programming-library/blob/master/math/xor.cpp)
 
 ### 組合せ
 
