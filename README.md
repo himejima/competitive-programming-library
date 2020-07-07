@@ -27,7 +27,7 @@
 
 - [0-1ナップサック DP](https://github.com/himejima/competitive-programming-library/blob/master/dp/knapsack-01.cpp)
 - 区間分割型ナップサック DP
-- bitDP
+- [bitDP](https://github.com/himejima/competitive-programming-library/blob/master/dp/bit-dp.cpp)
 - 桁 DP
 - 部分列 DP
 - ダブリング DP
