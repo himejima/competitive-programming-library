@@ -15,33 +15,33 @@ const ll INF = 1LL << 60;
 
 ll N, K;
 string S;
-
 int main() {
-    cin >> N >> K;
-    cin >> S;
+    cin >> N >> K >> S;
 
-    // 1 0 1 0 1 という配列を作る
-    vector<ll> nums;
-    int current = 1;
+    // 1 0 1 0 1 と連続している数の配列を作る
+    vector<int> nums;
+
+    int num = 1;
     int cnt = 0;
 
     for (int i = 0; i < N; i++) {
-        // cout << (char)(current - '0') << endl;
-        if (S[i] - '0' == current) {
+        if (S[i] == (char)(num + '0')) {
             cnt++;
         } else {
+            // 切り替え
+            // 1 -> 0
+            // 0 - > 1
             nums.push_back(cnt);
-
-            // 0 と 1の切り替え
-            current = 1 - current;
-            // cout << current << " " << (char)current << endl;
+            num = 1 - num; 
             cnt = 1;
         }
-        // cout << cnt << endl;
     }
-    if (cnt != 0) nums.push_back(cnt);
 
-    // 1 で終わらない場合は 足してあげる
+    if (cnt != 0) {
+        nums.push_back(cnt);
+    }
+
+    // 1 の数 0をたす
     if (nums.size() % 2 == 0) nums.push_back(0);
 
     // rep(i, nums.size()) {
@@ -49,21 +49,20 @@ int main() {
     // }
     // cout << endl;
 
+    int add = 2 * K + 1;
+    int ans = 0;
 
-    // しゃくとりでやる
-    // 先頭を固定
+    // 1. for ループの外側にleft, right を持つ
+    int left = 0;
+    int right = 0;
+    int tmp = 0; // [left, right) の sum
 
-    ll left = 0, right = 0;
-    ll add = 2 * K + 1;
+    for (int i = 0; i < nums.size(); i += 2) {
+        // 2. 次の left, right を決める
+        int next_left = i;
+        int next_right = min((int)nums.size(), i + add);
 
-    ll ans = 0;
-    ll tmp = 0;
-
-    // 左端の移動
-    for (ll i = 0; i < nums.size(); i += 2) {
-        ll next_left = i;
-        ll next_right = min(i + add, (ll)nums.size());
-
+        // 3. 計算する
         while (next_left > left) {
             tmp -= nums[left];
             left++;
@@ -73,9 +72,12 @@ int main() {
             tmp += nums[right];
             right++;
         }
-        // cout << "l: " << next_left << " r: " << next_right << " " << tmp << endl;
+
+        // cout << i << " " << right << endl;
+        // for (int j = i; j < right; j++) {
+        //     tmp += nums[j];
+        // }
         ans = max(ans, tmp);
     }
-
     cout << ans << endl;
 }
