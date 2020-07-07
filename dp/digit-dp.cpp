@@ -29,9 +29,9 @@ int main() {
     for (int i = 0; i < N; i++) {
         int D = S[i] - '0';
         for (int j = 0; j < 2; j++) {
+            int target = 9;
+            if (j == 0) target = D;
             for (int k = 0; k <= K; k++) {
-                int target = 9;
-                if (j == 0) target = D;
                 for (int d = 0; d <= target; d++) {
                     int cnt = 0;
                     if (d != 0) cnt++;
