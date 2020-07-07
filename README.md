@@ -35,6 +35,7 @@
 - 木 DP
 - [全方位木 DP (俗称)](https://github.com/himejima/competitive-programming-library/blob/master/dp/reroot-dp.cpp)
 - 二乗の木 DP (俗称)
+- [LCS (最長共通部分列)](https://github.com/himejima/competitive-programming-library/blob/master/dp/lcs.cpp)
 
 
 ## 文字列
