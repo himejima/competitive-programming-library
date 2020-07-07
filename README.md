@@ -7,6 +7,7 @@
 - [ビット全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/bit.cpp)
 - [順列全探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/permutation.cpp)
 - [二分探索](https://github.com/himejima/competitive-programming-library/blob/master/full-search/binary-search.cpp)
+- [二分探索 (最大値の最小化)](https://github.com/himejima/competitive-programming-library/blob/master/full-search/binary-search-value.cpp)
 
 ## データ構造
 
