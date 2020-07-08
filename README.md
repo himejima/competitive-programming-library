@@ -45,6 +45,7 @@
 ## 文字列
 
 - [ローリングハッシュ](https://github.com/himejima/competitive-programming-library/blob/master/string/rolling_hash.cpp)
+- [Z-algorithm](https://github.com/himejima/competitive-programming-library/blob/master/string/z-algorithm.cpp)
 
 ## 幾何
 
