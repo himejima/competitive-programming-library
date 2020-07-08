@@ -16,6 +16,10 @@
 - [Union-Find (rank)](https://github.com/himejima/competitive-programming-library/blob/master/structure/uniondfind.cpp)
 - [Union-Find (size)](https://github.com/himejima/competitive-programming-library/blob/master/structure/uniondfind-2.cpp)
 
+### Priority Queue
+
+- [Priority Queue](https://github.com/himejima/competitive-programming-library/blob/master/structure/priority-queue.cpp)
+
 ## DP
 
 ### 累積和
