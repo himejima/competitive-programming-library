@@ -82,6 +82,7 @@
 - [エラトステネスの篩](https://github.com/himejima/competitive-programming-library/blob/master/math/sieve-eratosthenes.cpp)
 - [modpow](https://github.com/himejima/competitive-programming-library/blob/master/math/modpow.cpp)
 - [xor](https://github.com/himejima/competitive-programming-library/blob/master/math/xor.cpp)
+- [Nim](https://github.com/himejima/competitive-programming-library/blob/master/math/nim.cpp)
 
 ### 組合せ
 
@@ -96,3 +97,4 @@
 
 - [ダブリング](https://github.com/himejima/competitive-programming-library/blob/master/other/doubling.cpp)
 - [しゃくとり法](https://github.com/himejima/competitive-programming-library/blob/master/other/two-pointers.cpp)
+- [角度とラジアンの変換]
