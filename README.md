@@ -36,7 +36,7 @@
 - [桁 DP](https://github.com/himejima/competitive-programming-library/blob/master/dp/digit-dp.cpp)
 - 部分列 DP
 - ダブリング DP
-- 木 DP
+- [木 DP](https://github.com/himejima/competitive-programming-library/blob/master/dp/tree-dp.cpp)
 - [全方位木 DP (俗称)](https://github.com/himejima/competitive-programming-library/blob/master/dp/reroot-dp.cpp)
 - 二乗の木 DP (俗称)
 - [LCS (最長共通部分列)](https://github.com/himejima/competitive-programming-library/blob/master/dp/lcs.cpp)
