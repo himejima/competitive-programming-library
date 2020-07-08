@@ -6,7 +6,7 @@
 //   - どの子を選ぶかの処理を書く
 // - まとめたDPを用いて新たな部分木のDPを計算する add_root
 //   - 親とくっつく時の処理を書く
-//   - 末端で add_root が実行されるため、場合によっては調整が必要
+//   - 末端 (根のことだと思う) で add_root が実行されるため、場合によっては調整が必要
 //
 // 計算量: O(N)
 //
@@ -15,6 +15,10 @@
 //
 // 参考
 // https://algo-logic.info/tree-dp/
+//
+// 使い方
+// reroot.add_edge で辺を貼り
+// reroot.build(); でdp作成
 //
 #include <bits/stdc++.h>
 #define rep(i, n) for (int i = 0; i < (n); ++i)
