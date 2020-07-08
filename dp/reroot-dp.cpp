@@ -1,5 +1,13 @@
 //
 // Reroot
+// 
+// - 型DPと単位元
+// - 型DPに対する二項演算 merge
+//   - どの子を選ぶかの処理を書く
+// - まとめたDPを用いて新たな部分木のDPを計算する add_root
+//   - 親とくっつく時の処理を書く
+//
+// 計算量: O(N)
 //
 // verified
 // [GRL_5_A < Problems | Aizu Online Judge](https://onlinejudge.u-aizu.ac.jp/problems/GRL_5_A)
