@@ -24,6 +24,10 @@
 
 - [BIT](https://github.com/himejima/competitive-programming-library/blob/master/structure/bit.cpp)
 
+### 平方分割
+
+- [平方分割](https://github.com/himejima/competitive-programming-library/blob/master/structure/sqrt-decomposition.cpp)
+
 ## DP
 
 ### 累積和
