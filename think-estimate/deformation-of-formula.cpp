@@ -1,6 +1,8 @@
 //
 // 計算式を変形する
 // 同じ変数通しで、右辺と左辺に分ける
+// =>
+// 一方を固定して考えることができるようになる
 //
 // verified
 // [E - This Message Will Self-Destruct in 5s](https://atcoder.jp/contests/abc166/tasks/abc166_e)
