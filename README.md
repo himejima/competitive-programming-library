@@ -20,6 +20,10 @@
 
 - [Priority Queue](https://github.com/himejima/competitive-programming-library/blob/master/structure/priority-queue.cpp)
 
+### BIT
+
+- [BIT](https://github.com/himejima/competitive-programming-library/blob/master/structure/bit.cpp)
+
 ## DP
 
 ### 累積和
