@@ -28,6 +28,10 @@
 
 - [平方分割](https://github.com/himejima/competitive-programming-library/blob/master/structure/sqrt-decomposition.cpp)
 
+### セグツリー
+
+- [セグツリー](https://github.com/himejima/competitive-programming-library/blob/master/structure/segment-tree.cpp)
+
 ## DP
 
 ### 累積和
